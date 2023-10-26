@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #003B4A;
+    font-family: 'Sen', sans-serif;
+}
+.header {
+    background: #92DFF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4em 0;
+}
+.header h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+.header h4 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+span.bot-dot {
+    border-bottom: 3px dotted #003B4A;
+}
+a {
+    color:#F69333;
+}
+a:hover {
+    color:#003B4A;
+}
+.sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 600px;
+    width: 100%;
+    margin: 2em  auto;
+    line-height: 1.6;
+    text-align: center;
+    font-size: .95rem;
+    font-weight: 100;
+}
+.about {
+    background: #efefef;
+    padding: 3rem 4rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.about h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.about .about__contents {
+    display: flex;
+    gap: 1em;
+}
