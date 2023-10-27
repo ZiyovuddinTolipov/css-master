@@ -7,6 +7,8 @@
 body {
     color: #003B4A;
     font-family: 'Sen', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 .header {
     background: #92DFF1;
@@ -34,6 +36,14 @@ span.bot-dot {
 }
 a {
     color:#F69333;
+}
+h3 {
+    font-size: 2.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 900;
 }
 a:hover {
     color:#003B4A;
@@ -69,4 +79,27 @@ a:hover {
 .about .about__contents {
     display: flex;
     gap: 1em;
+}
+.wrapper {
+    display: flex;
+    gap: 2.3em;
+    padding: 6rem;
+}
+.wrapper .supporting {
+    width: 70%;
+    padding: 2rem;
+}
+.wrapper .sidebar {
+    width: 30%;
+    background: #92DFF1;
+    padding:2rem;
+}
+.sidebar  ul  {
+    padding: 2rem;
+}
+.sidebar a {
+    color:rgb(96, 112, 116);
+}
+.sidebar a:hover {
+    color:#F69333;
 }
