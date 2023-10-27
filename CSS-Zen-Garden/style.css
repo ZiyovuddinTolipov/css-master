@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     color: #003B4A;
     font-family: 'Sen', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
 .header {
     background: #92DFF1;
     display: flex;
@@ -18,10 +21,12 @@ body {
     flex-direction: column;
     padding: 4em 0;
 }
+
 .header h1 {
     font-size: 4rem;
     font-weight: 900;
 }
+
 .header h4 {
     display: block;
     font-size: 1.5em;
@@ -31,12 +36,15 @@ body {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 span.bot-dot {
     border-bottom: 3px dotted #003B4A;
 }
+
 a {
-    color:#F69333;
+    color: #F69333;
 }
+
 h3 {
     font-size: 2.5rem;
     margin-block-start: 1em;
@@ -45,9 +53,11 @@ h3 {
     margin-inline-end: 0px;
     font-weight: 900;
 }
+
 a:hover {
-    color:#003B4A;
+    color: #003B4A;
 }
+
 .sub-header {
     display: flex;
     justify-content: center;
@@ -56,12 +66,13 @@ a:hover {
     gap: 1em;
     max-width: 600px;
     width: 100%;
-    margin: 2em  auto;
+    margin: 2em auto;
     line-height: 1.6;
     text-align: center;
     font-size: .95rem;
     font-weight: 100;
 }
+
 .about {
     background: #efefef;
     padding: 3rem 4rem;
@@ -71,35 +82,80 @@ a:hover {
     flex-direction: column;
     gap: 2em;
 }
+
 .about h3 {
     font-size: 2.5rem;
     font-weight: 900;
     text-align: center;
 }
-.about .about__contents {
+
+.about .about-contents {
     display: flex;
     gap: 1em;
+    flex-direction: row;
 }
+
 .wrapper {
     display: flex;
     gap: 2.3em;
     padding: 6rem;
+    flex-direction: row;
 }
+
 .wrapper .supporting {
-    width: 70%;
+    width: 65%;
     padding: 2rem;
+}
+.wrapper .supporting  p {
+margin: 1rem 0;
 }
 .wrapper .sidebar {
-    width: 30%;
+    width: 35%;
     background: #92DFF1;
-    padding:2rem;
-}
-.sidebar  ul  {
     padding: 2rem;
 }
-.sidebar a {
-    color:rgb(96, 112, 116);
+
+.sidebar ul {
+    padding: 2rem;
 }
+
+.sidebar a {
+    color: rgb(96, 112, 116);
+}
+
 .sidebar a:hover {
-    color:#F69333;
+    color: #F69333;
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        gap: 1.3em;
+        padding: 2rem;
+        flex-direction: column;
+    }
+    .wrapper .sidebar , .wrapper .supporting {
+        width: 100%;
+    }
+    .about .about-contents {
+        flex-direction: column;
+    }
+
+    
+}
+@media (max-width: 900) {
+    /* .sidebar {
+        background: #000;
+    } */
+    .wrapper {
+        gap: 0em;
+        padding: 2rem;
+        flex-direction: column;
+    }
+    .about .about-contents {
+        flex-direction: column;
+    }
+    .about .about-contents div {
+        width: 100%;
+    }
 }
